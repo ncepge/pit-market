@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{{ static_url('images/favicon.ico') }}" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="{{ static_url('styles/style.css') }}">
+    <title>Pit Market Game</title>
+  </head>
+  <body>
+    {% autoescape None %}
+    <div id=root>
+      <div id="warningPage" style="display: none">{{ warning }}</div>
+      <div id="deckSettingsPage" style="display: none">{{ deckSettings }}</div>
+      <div id="endGamePage" style="display: none">{{ endGame }}</div>
+      <div id="roundPage" style="display: none">{{ round }}</div>
+      <div id="roundSettingsPage" style="display: none">{{ roundSettings }}</div>
+    </div>
+
+    <div class="helpText hidden" id="help_displayText"></div>
+    
+    <script type="text/javascript" src="{{ static_url('scripts/host/state.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('scripts/host/deckSettings.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('scripts/host/roundSettings.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('scripts/host/round.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('scripts/host/main.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('scripts/offers.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('scripts/transactions.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('scripts/time.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('scripts/endGame.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('scripts/qrcode.min.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('scripts/setup.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('scripts/help.js') }}"></script>
+  </body>
+</html>
