@@ -5,15 +5,15 @@
     <link href="{{ static_url('images/favicon.ico') }}" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="{{ static_url('styles/style.css') }}">
     <script type="text/javascript" src="{{ static_url('scripts/help.js') }}"></script>
-    <title>Pit Market Game</title>
+    <title>Jogo Pit Market</title>
   </head>
   <body>
     {% autoescape None %}
-    <h1 id="home-title">Pit Market Game</h1>
+    <h1 id="home-title">Jogo Pit Market</h1>
     <div style="position: relative;">
       <form onmouseover="drawHelp('help_joinGame');" onmouseout="hideHelp();" >
-        <input class="txt-field" id="room" name="game" type="text" placeholder="Game Code">
-        <input class="btn" type="submit" value="Join">
+        <input class="txt-field" id="room" name="game" type="text" placeholder="C&oacute;digo do Jogo">
+        <input class="btn" type="submit" value="Entrar">
       </form>
       <div class="helpBubble" onmouseover="drawHelp('help_joinGame');" onmouseout="hideHelp();" unselectable="on">?</div>
     </div>
@@ -21,7 +21,7 @@
         <div class="credits credits-container">
           <div class="credits-title">Developed by</div>
           {{''.join('<div class="just-right">{0}</div><div class="just-left">{1}</div>'.format(k, v) for k, v in credits.items())}}
-          <div class="credits-title just-left"><a id="host-link" href="/?game=host">Host a game</a></div>
+          <div class="credits-title just-left"><a id="host-link" href="/?game=host">Iniciar um jogo</a></div>
         </div>
     </div>
     <div class="helpText hidden" id="help_displayText"></div>
