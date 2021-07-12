@@ -30,14 +30,18 @@ function rules()
 	// Crete html
 	var html = `
 <h1>Regras</h1>
-<p>No in&iacute;cio de cada rodada, voc&ecirc; receber&aacute; uma carta com um valor. Voc&ecirc; tamb&eacute;m ser&aacute; informado se ser&aacute; um Comprador ou Vendedor. \
+<p>No in&iacute;cio de cada rodada, voc&ecirc; receber&aacute; uma carta com um valor.\
+Voc&ecirc; tamb&eacute;m ser&aacute; informado se ser&aacute; um Comprador ou Vendedor. \
+
 Se voc&ecirc; &eacute; um Vendedor, seu objetivo &eacute; vender seus "produtos" por um pre&ccedil;o superior ao valor do seu cart&atilde;o. \
+
 Se voc&ecirc; &eacute; um Comprador, seu objetivo &eacute; comprar "mercadorias" por um pre&ccedil;o inferior ao valor do seu cart&atilde;o. \
+
 A diferen&ccedil;a entre o valor do sua carta e o pre&ccedil;o pelo qual voc&ecirc; compra ou vende &eacute; o seu lucro. \
 Para fazer um acordo com outro jogador, voc&ecirc; deve publicar uma oferta ou aceitar. Postar uma oferta pode ser feito inserindo uma oferta legal em seu dispositivo e pressionando ‘Enviar’. Voc&ecirc; tamb&eacute;m ver&aacute; ofertas de outros jogadores que aparecem em seu dispositivo. \
-Se voc&ecirc; deseja aceitar uma dessas ofertas, basta clicar na oferta. \
+Se voc&ecirc; deseja aceitar uma dessas ofertas, basta clicar na oferta. \ 
 </p>`
-	
+
 	// html += "<p>Every player will be assigned a card at random. This card will tell you whether you are buying or selling, and what your card is worth.</p>"
 	// html += "<p><b>Buyers</b> are unable to buy a card for more than their card's value<br/>";
 	// html += "<b>Sellers</b> are unable to sell a card for less than their card's value</p>";
