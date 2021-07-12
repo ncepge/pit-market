@@ -17,7 +17,7 @@ function drawOfferList() {
 					(state.isSeller ? price >= state.card + state.tax : price <= state.card) ?
 					`onclick="acceptOffer('${offerId}')"` : ``
 				}>
-				${isSeller ? `Comprando` : `Vendendo`} at ${price}
+				${isSeller ? `Comprando` : `Vendendo`} &agrave; ${price}
 			</div>`)
 		.join(``);
 }
@@ -40,7 +40,7 @@ function acceptOffer(offerId) {
 		type: `accept`,
 		offerId: offerId
 	});
-	alert("Offer Accepted!");
+	alert("Oferta Aceita!");
 }
 
 function submitOffer() {
@@ -68,5 +68,5 @@ function submitOffer() {
 function setRound(round) {
 	let elements = document.getElementsByClassName("info_round");
 	for (let i = 0; i < elements.length; i++)
-		elements[i].innerHTML = `<span>Round: </span>${round}`;
+		elements[i].innerHTML = `<span>Rodada: </span>${round}`;
 }

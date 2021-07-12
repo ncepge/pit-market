@@ -143,13 +143,13 @@ function drawHotswapPanel() {
 
     ctx.fillStyle = textColor;
     ctx.font = promptFont;
-    ctx.fillText("Post offer to buy", x + width / 6, y + height / 2);
+    ctx.fillText("Postar oferta para comprar", x + width / 6, y + height / 2);
 
     btn_offer.x = x + (width / 6) * 4;
     btn_offer.y = y + height / 3;
     btn_offer.w = 180;
     btn_offer.h = 40;
-    drawButton(btn_offer.x, btn_offer.y, btn_offer.w, btn_offer.h, 'rgba(125, 230, 50, 255)', "Post Offer!");
+    drawButton(btn_offer.x, btn_offer.y, btn_offer.w, btn_offer.h, 'rgba(125, 230, 50, 255)', "Postar Oferta!");
 }
 
 function drawTopPanel() {
