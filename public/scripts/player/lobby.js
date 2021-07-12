@@ -5,7 +5,7 @@ function getContext(id) { return document.getElementById(id); }
 function defaultText()
 {
 	div = getContext("help_text");
-	var html = "<h1>First Time?</h1><p>Use the buttons below to learn more about the game</p>";
+	var html = "<h1>First Time?</h1><p>Use os bot&otilde;es abaixo para aprender mais sobre o jogo</p>";
 	div.innerHTML = html;
 }
 function about()
@@ -29,19 +29,14 @@ function rules()
 
 	// Crete html
 	var html = `
-<h1>Rules</h1>
-<p>At the start of each <b>round</b>, you will be given a <b>card</b> with a value. \
-You will also be either a <b>Buyer</b> or a <b>Seller</b>, which will be shown on \
-your device.</p> <p>If you are a <b>Seller</b>, your goal is to sell your ‘goods’ \
-for a price no less than your card’s value. </p> <p>If you are a <b>Buyer</b>, your \
-goal is to buy ‘goods’ for a price no more than your card’s value. </p> <p>The \
-difference between your card’s value and the price you buy/sell for is \
-your <b>profit</b>.</p>
-<p>To make a <b>deal</b> with another player, you must either <b>post</b> an <b>offer</b> \
-or <b>accept</b> one. Posting an offer can be done by entering a legal offer \
-into your device and pressing ‘Submit’. You will also see offers from \
-other players appearing on your device. If you wish to accept one of \
-these offers, simply press the offer.</p>`
+<h1>Regras</h1>
+<p>No in&iacute;cio de cada rodada, voc&ecirc; receber&aacute; uma carta com um valor. Voc&ecirc; tamb&eacute;m ser&aacute; informado se ser&aacute; um Comprador ou Vendedor. \
+Se voc&ecirc; &eacute; um Vendedor, seu objetivo &eacute; vender seus "produtos" por um pre&ccedil;o superior ao valor do seu cart&atilde;o. \
+Se voc&ecirc; &eacute; um Comprador, seu objetivo &eacute; comprar "mercadorias" por um pre&ccedil;o inferior ao valor do seu cart&atilde;o. \
+A diferen&ccedil;a entre o valor do sua carta e o pre&ccedil;o pelo qual voc&ecirc; compra ou vende &eacute; o seu lucro. \
+Para fazer um acordo com outro jogador, voc&ecirc; deve publicar uma oferta ou aceitar. Postar uma oferta pode ser feito inserindo uma oferta legal em seu dispositivo e pressionando ‘Enviar’. Voc&ecirc; tamb&eacute;m ver&aacute; ofertas de outros jogadores que aparecem em seu dispositivo. \
+Se voc&ecirc; deseja aceitar uma dessas ofertas, basta clicar na oferta. \
+</p>`
 	
 	// html += "<p>Every player will be assigned a card at random. This card will tell you whether you are buying or selling, and what your card is worth.</p>"
 	// html += "<p><b>Buyers</b> are unable to buy a card for more than their card's value<br/>";
@@ -72,7 +67,7 @@ function special()
 	div = div = getContext("help_text");
 
 	// Crete html
-	var html = "<h1>Special Rules</h1>"
+	var html = "<h1>Regras Especiais</h1>"
 	html += "<p> The host of the game may introduce special rules for a round or for a whole game. Any special rules will be displayed on the screen during the round and on the lobby screen.<p>"
 	
 	// Tax
