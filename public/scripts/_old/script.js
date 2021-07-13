@@ -117,8 +117,8 @@ function drawBottomPanel() {
     ctx.textAlign = "center";
     ctx.font = tradePanelLabelsFont;
     ctx.fillStyle = "#ffffff";
-    ctx.fillText("Current Offers", x + (canvas.width / 4), y + tradePanelLabelsYOffset);
-    ctx.fillText("Completed Trades", x + (canvas.width / 4) * 3, y + tradePanelLabelsYOffset);
+    ctx.fillText("Ofertas atuais", x + (canvas.width / 4), y + tradePanelLabelsYOffset);
+    ctx.fillText("Negociações completadas", x + (canvas.width / 4) * 3, y + tradePanelLabelsYOffset);
 }
 
 function drawHotswapPanel() {
@@ -158,13 +158,13 @@ function drawTopPanel() {
 
     ctx.font = topPanelLabelFont;
     ctx.fillStyle = topPanelTextColor;
-    ctx.fillText("Round: ", topPanelLabelsXOffset, topPanelLabelsYOffset);
+    ctx.fillText("Rodada: ", topPanelLabelsXOffset, topPanelLabelsYOffset);
     ctx.fillText(roundNo, topPanelFieldsXOffset, topPanelLabelsYOffset);
-    ctx.fillText("Round time left: ", topPanelLabelsXOffset, topPanelLabelsYOffset + topPanelLabelsYSpacing);
+    ctx.fillText("Tempo da rodada: ", topPanelLabelsXOffset, topPanelLabelsYOffset + topPanelLabelsYSpacing);
     ctx.fillText("01:59", topPanelFieldsXOffset, topPanelLabelsYOffset + topPanelLabelsYSpacing);
-    ctx.fillText("Profit made: ", topPanelLabelsXOffset, topPanelLabelsYOffset + topPanelLabelsYSpacing * 2);
+    ctx.fillText("Lucro feito: ", topPanelLabelsXOffset, topPanelLabelsYOffset + topPanelLabelsYSpacing * 2);
     ctx.fillText("$" + profit, topPanelFieldsXOffset, topPanelLabelsYOffset + topPanelLabelsYSpacing * 2);
-    ctx.fillText("Your card:", canvas.width - 150, 30);
+    ctx.fillText("Sua carta:", canvas.width - 150, 30);
 
     drawCard(canvas.width - 150, 50, isSeller);
 }
@@ -186,9 +186,9 @@ function drawCard(x, y, selling) {
     ctx.font = cardFont;
 
     if (selling)
-        ctx.fillText("Selling", x + cardWidth / 2, y + cardHeight / 4);
+        ctx.fillText("Vendendo", x + cardWidth / 2, y + cardHeight / 4);
     else
-        ctx.fillText("Buying", x + cardWidth / 2, y + cardHeight / 4);
+        ctx.fillText("Comprando", x + cardWidth / 2, y + cardHeight / 4);
 
     ctx.font = cardFont;
     ctx.fillText(cardValue, x + cardWidth / 2, y + cardHeight / 2 + 30);

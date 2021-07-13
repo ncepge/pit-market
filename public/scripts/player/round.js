@@ -5,7 +5,7 @@ function setTrading(canTrade) {
 
 function setCard(value, isSeller) {
     document.getElementById(`cardValue`).innerText = '$' + String(value);
-    document.getElementById(`cardIsSeller`).innerText = isSeller === null ? `Espectador` : isSeller ? `Vendendo` : `Comprando`;
+    document.getElementById(`cardIsSeller`).innerText = isSeller === null ? `Assistindo` : isSeller ? `Vendendo` : `Comprando`;
 
     let input = document.getElementById(`btnPostOffer`);
 	input.disabled = false;

@@ -53,7 +53,7 @@ function how()
 	div = div = getContext("help_text");
 
 	// Crete html
-	var html = "<h1>Como jogar o game</h1>"
+	var html = "<h1>Como jogar</h1>"
 	html += "TODO"
 	// Set the html
 	div.innerHTML = html;

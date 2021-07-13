@@ -17,7 +17,7 @@ function drawOfferList() {
 					(state.isSeller ? price >= state.card + state.tax : price <= state.card) ?
 					`onclick="acceptOffer('${offerId}')"` : ``
 				}>
-				${isSeller ? `Comprando` : `Vendendo`} &agrave; ${price}
+				${isSeller ? `Vendendo` : `Comprando`} &agrave; ${price}
 			</div>`)
 		.join(``);
 }
@@ -45,7 +45,7 @@ function acceptOffer(offerId) {
 
 function submitOffer() {
 	if (state.tradePrice === null)
-	{ if (confirm("Confirm offer?"))
+	{ if (confirm("Confirma oferta?"))
 		{
 		let input = document.getElementById(`btnPostOffer`);
 		offerprice = parseInt(input.value);
