@@ -14,9 +14,9 @@ function about()
 	div = div = getContext("help_text");
 
 	// Crete html
-	var html = "<h1>About the Pit Market Game</h1>"
-	html += "<p>The pit market game is a game used to demonstrate how the free market will eventually come to settle on a fair price for goods and services.</p>"
-	html += "<p>The pit market game is traditionally played in a classroom where the players are free to move around<p>"
+	var html = "<h1>Sobre o Jogo Pit Market</h1>"
+	html += "<p>O Jogo Pit Market &eacute; um jogo usado para demonstrar como o mercado livre acabar&aacute; por se estabelecer por um pre&ccedil;o justo para bens e servi&ccedil;os.</p>"
+	html += "<p>O Jogo Pit Market &eacute; tradicionalmente jogado em uma sala de aula onde os jogadores s&atilde;o livres para se movimentar.<p>"
 	html += "<p>TODO</p>";
 
 	// Set the html
