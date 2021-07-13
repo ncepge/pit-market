@@ -12,7 +12,7 @@ def send(gameID,email):
     # Filename will always be the same.
     filename = 'gameData_'+gameID+'.csv'
     # Gmail account created for the project
-    email_user = 'pitmarketgame@gmail.com'
+    email_user = os.environ.get('gmail_account')
     #TODO Password field to be kept in a local config file (not to be uploaded to Git)
     email_password = os.environ.get('gmail_password')
     print(email_password)
